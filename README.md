@@ -10,11 +10,19 @@ Above picture represents the commit history of this repopsitory.
 
 - First created a git repository locally and created Production(master), Integration and HotFix branch. And after created other two branches Feature1 and Feature2 from Integration Branch. 
 
-- Added some files in Feature2 and Feature1 are merged into Integration branch by creating the pull requests and adding reviewers requesting to merge.
+- Added a file in Feature2 and merged into Integration branch by creating the pull requests and adding reviewers requesting to merge.
 
-- In next step, changes in Integration branch merged into Production(master) and HotFix branch
+- In next step, Added a file in feature1 branch and made a commit
 
-- Now, In HotFix branch made a quick fix and merged into Integration and Production branch
+- Now Use Git Pull reflect tht changes in local repository of Integration branch and rebase into integration branch, After this step we can see that all the changes we made in feature1 and feature2 are merged into Integration. 
+
+- In next step, Push the changes in Integration branch and merge into Production(master) and HotFix branch
+
+- Now, Pull the changes in each branch And add one more file in Feature1, commit and merge into Integration, Hotfix and Production branches.
+
+- After that checkout to HotFix branch and made a quick fix and merged into Integration and Production branch
+
+- Now pull the changes from github and checkout to main merge Integration branch to make sure no left out branches.
 
 - Finally deleted Feature1, Feature2, HotFix branches after completing the above steps.
 
@@ -39,5 +47,7 @@ Above picture represents the commit history of this repopsitory.
 `git merge <branch name>`
 
 `git branch -d <branch name>`
+
+`git push origin :<deleted branch>`
 
 
